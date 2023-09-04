@@ -1,0 +1,203 @@
+body {
+background: #262322;
+color: whitesmoke;
+}
+footer{
+margin-top:20%;}
+.info{
+margin-left: 10%;
+margin-right: 10%;
+
+}
+.info h1{
+font-size: 40px;}
+form {
+    margin-left:10%;
+    width: 75%;
+}
+.idd {
+font-size: 40px;
+
+}
+.input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em auto;
+    }
+.code212{
+padding: 10px;
+        width: 50%; /* Регулируйте ширину по вашему усмотрению */
+        border: 2px solid #3498db; /* Цвет рамки */
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+}
+:root {
+            --char-w: 1ch;
+            --gap: 0.5ch;
+            --n-char: 6;
+            --in-w: calc(var(--n-char) * (var(--char-w) + var(--gap)));
+        }
+        .char-w {
+            width: 1ch;
+        }
+        .gap {
+            width: 0.5ch;
+        }
+        .n-char {
+            width: 7;
+        }
+        .in-w {
+            width: calc(7 * (1ch + 0.5ch));
+        }
+        .code21 {
+            color: white;
+            display: block;
+           margin: 2em auto;
+
+
+            border: none;
+
+            padding: 0;
+            width: var(--in-w);
+            background: repeating-linear-gradient(90deg,
+                dimgrey 0, dimgrey var(--char-w),
+                transparent 0, transparent calc(var(--char-w) + var(--gap)))
+                0 100%/ calc(var(--in-w) - var(--gap)) 2px no-repeat;
+            font: 8ch droid sans mono, consolas, monospace;
+            letter-spacing: var(--gap);
+
+            &:focus {
+                outline: none;
+                color: dodgerblue;
+            }
+        }
+button.idsubmit {
+    background-color: #2573e8; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 15px 30px; /* Увеличьте значения для увеличения размера кнопки */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Увеличьте размер шрифта */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Этот стиль превращает кнопку в блочный элемент */
+    margin: 0 auto; /* Это центрирует кнопку по горизонтали */
+}
+
+button.idsubmit:hover {
+    background-color: white; /* Цвет фона кнопки при наведении */
+    color: #2573e8;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.bi{
+color: white;
+}
+.center-div {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  margin-bottom: 10%;
+
+  margin-right: 8%;
+
+}
+
+
+
+@media only screen and (max-width: 770px){
+footer{
+margin-top:10%;}
+.fs-4{
+margin-left:5%;
+margin-right:30px;
+
+}
+.code21{
+font: 6ch droid sans mono, consolas, monospace;
+}
+h1{
+font-size:25px;}
+
+.list-unstyled{
+margin-left: 30%;}
+footer p{
+margin-left: 10%;
+font-size: 16px;
+}
+.gif{
+width: 200px;
+height: 200px;
+margin-left: 20%;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 1630px){
+.info{
+margin-left:15%;
+width: 70%;
+
+}
+.info h1{
+font-size: 40px;
+margin-bottom: 2%;}
+.info p{
+font-size: 25px;
+}
+.info ul{
+margin-top:3%;
+margin-bottom:3%;
+font-size: 25px;}
+.info h4{
+margin-top:3%;
+margin-bottom:3%;
+font-size: 30px;}
+footer{
+margin-top: 30%;}
+
+}
+
+@media only screen and (max-width: 570px){
+.info{
+margin-left: 5%;}
+.code21{
+font: 4ch droid sans mono, consolas, monospace;
+}
+footer p{
+margin-left: 15%;
+font-size:14px;
+}
+footer{
+margin-top:50%;}
+footer ul{
+margin-left:70%;}
+h1{
+font-size: 18px;}}
+
+
+@media only screen and (max-width: 300px){
+header{
+font-size: 10px;}
+}
+h1{
+font-size:18px;}
+h4{
+font-size:16px;}
+
+.idsubmit{
+font-size:12px;
+}
+
+}

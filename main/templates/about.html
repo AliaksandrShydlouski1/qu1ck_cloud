@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    About
+{% endblock %}
+{% block headers %}
+<li class="nav-item"><a href="{% url 'home' %}" class="nav-link" aria-current="page">Home</a></li>
+<li class="nav-item"><a href="{% url 'create' %}" class="nav-link">Create Cloud</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active">About</a></li>
+{% endblock %}
+
+{% block content %}
+<div class="info">
+    <h1> About Page</h1>
+    <p font-size="30px"> The QuickCloud app allows you to quickly transfer data from device to device. The way it works is very simple:</p>
+    <ul>
+        <li>you create a cloud where you put all the information you need (it can be text, files and photos)</li>
+        <li>you write down the ID of the cloud, which you will receive after creation. It is important not to lose this ID, otherwise you will not be able to access the data</li>
+        <li>from another device go to QuickCloud.com, enter your Cloud ID and get all your information.</li>
+    </ul>
+    <h4>Important: the cloud does not last long. The cloud will be deleted 7 days after creation.</h4>
+    <p><b>If you want to contact me, please refer to the footer of the page. 3 contact options are offered (mail, facebook, instagram).</b></p>
+</div>
+{% endblock %}
